@@ -428,6 +428,7 @@ h1, h2, h3, h4, h5, h6, p {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    /*background-attachment: scroll;*/
     position: relative;
     text-align: center;
 }
@@ -763,7 +764,10 @@ h1, h2, h3, h4, h5, h6, p {
     ----------------------------------------------------------------------------- */
 
     @media screen and (min-width: 0px) and (max-width: 319px) {
-        
+        #home {
+            background-attachment: scroll;
+        }
+
         .row {
             margin-left:-24px;
         }
@@ -894,6 +898,9 @@ h1, h2, h3, h4, h5, h6, p {
 
     @media screen and (min-width: 320px) and (max-width: 459px) {
         
+        #home {
+            background-attachment: scroll;
+        }
         .row {
             margin-left:-24px;
         }
@@ -1035,7 +1042,9 @@ h1, h2, h3, h4, h5, h6, p {
     ----------------------------------------------------------------------------- */
 
     @media screen and (min-width: 460px) and (max-width: 779px) {
-        
+/*        #home {
+            background-attachment: scroll;
+        }*/
         .row {
             margin-left:-24px;
         }
@@ -1159,7 +1168,9 @@ h1, h2, h3, h4, h5, h6, p {
     ----------------------------------------------------------------------------- */
 
     @media screen and (min-width: 780px) and (max-width: 1199px) {
-        
+/*        #home {
+            background-attachment: scroll;
+        }*/
         .row {
             margin-left:-24px;
         }
