@@ -1042,9 +1042,9 @@ h1, h2, h3, h4, h5, h6, p {
     ----------------------------------------------------------------------------- */
 
     @media screen and (min-width: 460px) and (max-width: 779px) {
-/*        #home {
+        #home {
             background-attachment: scroll;
-        }*/
+        }
         .row {
             margin-left:-24px;
         }
