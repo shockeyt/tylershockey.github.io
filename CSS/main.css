@@ -586,6 +586,13 @@ h1, h2, h3, h4, h5, h6, p {
             transition: opacity 0.3s ease-out, visibility 0.2s ease-out;
 }
 
+.buttonAndLink {
+    
+}
+.workSummary {
+    /*overflow: scroll;*/
+}
+
 .work-item-inside.visuallyshowed {
     opacity: 1;
     visibility: visible;
