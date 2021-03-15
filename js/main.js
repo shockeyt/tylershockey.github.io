@@ -58,6 +58,21 @@ jQuery(document).ready(function($) {
 	}
 	// Skrollr
 
+	$('.filter-item').on('click', function(){
+		$('.work-item').hide();
+		var type = $(this).data('type');
+		console.log(type);
+		$(this).addClass('active').siblings().removeClass('active');
+		if (type == 'all') {
+			$('.work-item').fadeIn();
+		} else {
+			$('.work-item').each(function(){
+				if ($(this).hasClass(type)) {
+					$(this).fadeIn();
+				}
+			});	
+		}
+	});
 });
 
 

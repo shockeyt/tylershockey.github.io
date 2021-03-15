@@ -49,7 +49,6 @@
                     <div class="col home-title jiji">
                         <h1>Tyler Shockey</h1>
                         <h2>WEB DEVELOPER</h2>
-                        <a href="img/resume/TylerDevResumeJuly2017v1.jpg" target="_blank" class="but">View Resume</a>
                     </div>
                 </div>
             </section>
@@ -61,13 +60,16 @@
                             data-100="-webkit-transform: translateX(100px); opacity:0;"
                             data-500="-webkit-transform: translateX(0px); opacity:1;"
                         >About me</h3>
+                        <div class="profile-pic">
+                            <img src="img/profile-pic.jpeg" alt="" class="">
+                        </div>
                     </div>
                     <div class="col empty">&nbsp;</div>
                     <div class="col about-description">
                         <p
                             data-100="opacity:0;"
                             data-500="opacity:1;"
-                        >I'm a web developer in Denver, CO. I'm passionate about great web design styling and functionality. Using my creativity to build professional and interactive websites is my main career focus. I also love cutting edge design and exploring new technologies. Catch me in my free time on a mountain somewhere!</p>
+                        >I'm a web developer in Denver, CO. I'm passionate about great web design styling and functionality. Using my creativity to build professional and interactive websites is my main career focus. I also love cutting edge design and exploring new technologies. Catch me in my free time playing guitar or on a mountain somewhere!</p>
                         <a href="#contact" class="but">Get in touch</a>
                     </div>
                     <div class="col empty">&nbsp;</div>
@@ -84,10 +86,10 @@
                         <ul>
                             <li>Frontend Development</li>
                             <li>HTML || CSS</li>
+                            <li>Wordpress</li>
+                            <li>Shopify || Craft</li>
                             <li>AJAX || Bootstrap</li>
-                            <li>Angular || React || Ionic</li>
                             <li>JavaScript || jQuery</li>
-                            <li>Gulp || SASS</li>
                         </ul>
                     </div>
                     <div class="col services-frontend"
@@ -97,11 +99,11 @@
                         <span class="icon-computer"></span>
                         <ul>
                             <li>Backend Development</li>
-                            <li>Node</li>
-                            <li>Express || EJS</li>
-                            <li>Mongo || Mongoose</li>
-                            <li>SQL || Sequelize</li>
-                            <li>Passport || Satellizer</li>
+                            <li>PHP</li>
+                            <li>Liquid || Twig</li>
+                            <li>Plugin Builds</li>
+                            <li>MySQL</li>
+                            <li>Advanced Custom Fields</li>
                         </ul>
                     </div>
                     <div class="col services-team"
@@ -133,157 +135,441 @@
                     </div>
                     <div class="col empty">&nbsp;</div>
                     <div class="col work-description">
-                        <p
-                            data-900="opacity:0;"
-                            data-1300="opacity:1;"
-                        >A selection of recent projects I've been working on:</p>
+                        <div class="works-filter" data-900="opacity:0;"
+                        data-1300="opacity:1;">
+                            <p class="filter-item" data-type="all">All</p>
+                            <p class="filter-item" data-type="lifestyle">Lifestyle</p>
+                            <p class="filter-item" data-type="industries">Industries</p>
+                            <p class="filter-item" data-type="beverages">Beverages</p>
+                            <p class="filter-item" data-type="games">Games</p>
+                            <p class="filter-item" data-type="wordpress">Wordpress</p>
+                            <p class="filter-item" data-type="shopify">Shopify</p>
+                            <p class="filter-item" data-type="plugin">Plugins</p>
+                        </div>
                     </div>
                     <div class="col empty">&nbsp;</div>
                 </div>
                 <div class="work-examples page">
-                    <div class="col work-item"
+                    <div class="col work-item industries wordpress"
                         data-1300="opacity:0;"
                         data-1400="opacity:1;"
                     >
-                        <img src="img/works/14erScreenShots2cropped.png" alt="">
-                        <div class="work-item-inside">
-                            <div class="work-item-inside-content">
-                                <div class="buttonAndLink">
-                                    <a id="work1" target="_blank" href="" class="but">Click here</a>
-                                    
-                                    <h4>CMC 14ers App</h4>
-                                    <h5>Technologies Used</h5>
+                        <div class="image-holder">
+                            <a target="_blank" href="https://cirsa.org">
+                                <div class="top-right-icon">
+                                    <img src="img/wordpress-icon.png" alt="" class="">
                                 </div>
-                                <div class="workSummary">
-                                    <p>React Native || Xcode || Google Maps API</p>
-                                    <h5>Description</h5>
-                                    <p>With the direction of the Colorado Mountain Club, this mobile app provides information for 14ers and their routes.  Register for completion of summits to save to a database.  Save completed peaks to an info page.  Search for multiple mountains on the peaks page or look at the maps page for information.</p>
-                                </div>
-                            </div>
+                                <button class="view-site but">cirsa.org</button>
+                                <div class="bkgd-img" style="background-image: url('img/works/cirsa-homepage.jpg');"></div>
+                            </a>
                         </div>
                     </div>
-                    <div class="col work-item"
+                    <div class="col work-item lifestyle shopify"
                         data-1300="opacity:0;"
                         data-1400="opacity:1;"
                     >
-                        <img src="img/works/fishhappens_cropped.png" alt="">
-                        <div class="work-item-inside">
-                            <div class="work-item-inside-content">
-                                <div class="buttonAndLink">
-                                <a id="work2" target="_blank" href="http://flylab.herokuapp.com/home" class="but">Click here</a>
-                                <h4>FlyLab</h4>
+                        <div class="image-holder">
+                            <a target="_blank" href="https://halagear.com/">
+                                <div class="top-right-icon">
+                                    <img src="img/shopify-logo.png" alt="" class="shopify">
                                 </div>
-                                <div class="workSummary">
-                                <h5>Technologies Used</h5>
-                                <p>JS || CSS || Angular 1 || Satellizer || UI Router || Chart.js || Bootstrap || bCrypt || Express || PSQL || Sequelize || Request || USGS API || Weather Underground API || Google Maps</p>
-                                <h5>Description</h5>
-                                <p>FlyLab allows an experienced fisherman to select a potential fishing spot anywhere on google maps. When a location is dropped weather and stream flow data will be generated based on the coordinates.  Users can save their favorite spots and pull current data for those locations.</p>
-                                </div>
-                            </div>
+                                <button class="view-site but">halagear.com</button>
+                                <div class="bkgd-img" style="background-image: url('img/works/hala-homepage.jpg');"></div>
+                            </a>
                         </div>
                     </div>
-                    <div class="col work-item"
-                        data-1300="opacity:0;"
-                        data-1600="opacity:1;"
-                    >
-                        <img src="img/works/flybox_cropped.png" alt="">
-                        <div class="work-item-inside">
-                            <div class="work-item-inside-content">
-                                <div class="buttonAndLink">
-                                <a id="work3" target="_blank" href="https://flybox.herokuapp.com/" class="but">Click here</a>
-                                <h4>FlyBox Angular App</h4>
-                                </div>
-                                <div class="workSummary">
-                                <h5>Technologies Used</h5>
-                                <p>JS || CSS || Angular 1 || Bootstrap || Express || Mongo || Mongoose</p>
-                                <h5>Description</h5>
-                                <p>FlyBox is a simple Angular app that can catalogue your fly patterns in a database.  Fill out fly information and an image url to display a fly.  Flies can be added or deleted easily.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col work-item"
+                    <div class="col work-item lifestyle beverages wordpress"
                         data-1300="opacity:0;"
                         data-1400="opacity:1;"
                     >
-                        <img src="img/works/Whackamole_cropped.png" alt="">
-                        <div class="work-item-inside">
-                            <div class="work-item-inside-content">
-                               <div class="buttonAndLink">
-                               <a id="work4" target="_blank" href="https://shockeyt.github.io/Whack-a-Mole/" class="but">Click here</a>
-                                <h4>Whack-a-Mole</h4>
+                        <div class="image-holder">
+                            <a target="_blank" href="https://www.oskarblues.com/">
+                                <div class="top-right-icon">
+                                    <img src="img/wordpress-icon.png" alt="" class="">
                                 </div>
-                                <div class="workSummary">
-                                <h5>Technologies Used</h5>
-                                <p>JS || CSS || CSS Animations || Sound FX</p>
-                                <h5>Description</h5>
-                                <p>A simple browser game based on the infamous arcade game, 8-bit style.  Two players compete for a high score with a winner declared.  Complete with animations and sound effects.</p>
-                                </div>
-                            </div>
+                                <button class="view-site but">oskarblues.com</button>
+                                <div class="bkgd-img" style="background-image: url('img/works/ob-homepage.jpg');"></div>
+                            </a>
                         </div>
                     </div>
-<!--                     <div class="col work-item"
+                    <div class="col work-item industries wordpress"
                         data-1300="opacity:0;"
-                        data-1500="opacity:1;"
+                        data-1400="opacity:1;"
                     >
-                        <img src="img/works/Shadowbid_cropped.png" alt="">
-                        <div class="work-item-inside">
-                            <div class="work-item-inside-content">
-                                <div class="buttonAndLink">
-                                <a id="work5" href="#" class="but">Click here</a>
-                                <h4>Shadowbid Bootstrap Website</h4>
+                        <div class="image-holder">
+                            <a target="_blank" href="https://thecannabisindustry.org/">
+                                <div class="top-right-icon">
+                                    <img src="img/wordpress-icon.png" alt="" class="">
                                 </div>
-                                <div class="workSummary">
-                                <h5>Technologies Used</h5>
-                                <p>JS || CSS || Bootstrap || bCrypt || Passport || Express</p>
-                                <h5>Description</h5>
-                                <p>Shadowbid is a client-based boostrap mockup based on a current Chrome extension.  It displays user bids for products they're searching for.</p>
-                                </div>
-                            </div>
+                                <button class="view-site but">thecannabisindustry.org</button>
+                                <div class="bkgd-img" style="background-image: url('img/works/ncia-homepage.jpg');"></div>
+                            </a>
                         </div>
-                    </div> -->
-                        <div class="col work-item"
-                            data-1300="opacity:0;"
-                            data-1400="opacity:1;"
-                        >
-                            <img src="img/works/Songifypic_cropped2.png" alt="">
-                            <div class="work-item-inside">
-                                <div class="work-item-inside-content">
-                                    <div class="buttonAndLink">
-                                        <a id="work1" target="_blank" href="https://stormy-waters-85109.herokuapp.com/" class="but">Click here</a>
-                                        
-                                        <h4>Spotify Playlist Generator</h4>
-                                        <h5>Technologies Used</h5>
-                                    </div>
-                                    <div class="workSummary">
-                                        <p>JS || CSS || Request || bCrypt || EJS || Express || Mongo || Mongoose || Passport || Spotify API</p>
-                                        <h5>Description</h5>
-                                        <p>A user can generate a Spotify embedded playlist by searching for an artist.  A single album or a top-ten playlist can be created.  After creating an account, Songify will save search history.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    <div class="col work-item"
+                    </div>
+                    <div class="col work-item industries wordpress"
                         data-1300="opacity:0;"
-                        data-1600="opacity:1;"
+                        data-1400="opacity:1;"
                     >
-                        <img src="img/works/tictactoe_cropped.png" alt="">
-                        <div class="work-item-inside">
-                            <div class="work-item-inside-content">
-                                <div class="buttonAndLink">
-                                <a id="work6" target="_blank" href="https://shockeyt.github.io/tic-tac-toe/" class="but">Click here</a>
-                                <h4>Robot Tic-Tac-Toe</h4>
+                        <div class="image-holder">
+                            <a target="_blank" href="https://northpeakcre.com/">
+                                <div class="top-right-icon">
+                                    <img src="img/wordpress-icon.png" alt="" class="">
                                 </div>
-                                <div class="workSummary">
-                                <h5>Technologies Used</h5>
-                                <p>JS || CSS || jQuery</p>
-                                <h5>Description</h5>
-                                <p>A straight forward tic-tac -toe game built with jQuery. 
-                                </p>
-                                </div>
-                            </div>
+                                <button class="view-site but">northpeakcre.com</button>
+                                <div class="bkgd-img" style="background-image: url('img/works/northpeak-homepage.jpg');"></div>
+                            </a>
                         </div>
-                    </div>                    
+                    </div>
+                    <div class="col work-item lifestyle"
+                        data-1300="opacity:0;"
+                        data-1400="opacity:1;"
+                    >
+                        <div class="image-holder">
+                            <a target="_blank" href="https://www.bicyclecolorado.org/about-bicycle-colorado/tourism-resources/">
+                                <div class="top-right-icon">
+                                    <img src="img/google-maps-icon.png" alt="" class="google-map">
+                                </div>
+                                <button class="view-site but">The Hub</button>
+                                <div class="bkgd-img" style="background-image: url('img/works/bicycleco-hub.jpg');"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col work-item lifestyle shopify"
+                        data-1300="opacity:0;"
+                        data-1400="opacity:1;"
+                    >
+                        <div class="image-holder">
+                            <a target="_blank" href="https://tennisracquets.com/">
+                                <div class="top-right-icon">
+                                    <img src="img/shopify-logo.png" alt="" class="shopify">
+                                </div>
+                                <button class="view-site but">tennisracquets.com</button>
+                                <div class="bkgd-img" style="background-image: url('img/works/tennis-homepage.jpg');"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col work-item industries wordpress"
+                        data-1300="opacity:0;"
+                        data-1400="opacity:1;"
+                    >
+                        <div class="image-holder">
+                            <a target="_blank" href="https://brandjuice.com/">
+                                <div class="top-right-icon">
+                                    <img src="img/wordpress-icon.png" alt="" class="">
+                                </div>
+                                <button class="view-site but">brandjuice.com</button>
+                                <div class="bkgd-img" style="background-image: url('img/works/brandjuice-homepage.jpg');"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col work-item industries wordpress"
+                        data-1300="opacity:0;"
+                        data-1400="opacity:1;"
+                    >
+                        <div class="image-holder">
+                            <a target="_blank" href="https://www.careerwisecolorado.org/en/">
+                                <div class="top-right-icon">
+                                    <img src="img/wordpress-icon.png" alt="" class="">
+                                </div>
+                                <button class="view-site but">careerwisecolorado.org</button>
+                                <div class="bkgd-img" style="background-image: url('img/works/careerwise-homepage.jpg');"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col work-item industries wordpress"
+                        data-1300="opacity:0;"
+                        data-1400="opacity:1;"
+                    >
+                        <div class="image-holder">
+                            <a target="_blank" href="https://www.cmacpartners.com/">
+                                <div class="top-right-icon">
+                                    <img src="img/wordpress-icon.png" alt="" class="">
+                                </div>
+                                <button class="view-site but">cmacpartners.com</button>
+                                <div class="bkgd-img" style="background-image: url('img/works/cmac-homepage.jpg');"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col work-item lifestyle wordpress"
+                        data-1300="opacity:0;"
+                        data-1400="opacity:1;"
+                    >
+                        <div class="image-holder">
+                            <a target="_blank" href="https://www.discoverlongisland.com/">
+                                <div class="top-right-icon">
+                                    <img src="img/wordpress-icon.png" alt="" class="">
+                                </div>
+                                <button class="view-site but">discoverlongisland.com</button>
+                                <div class="bkgd-img" style="background-image: url('img/works/licvb-homepage.jpg');"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col work-item lifestyle wordpress games"
+                        data-1300="opacity:0;"
+                        data-1400="opacity:1;"
+                    >
+                        <div class="image-holder">
+                            <a target="_blank" href="https://www.forecashsports.com/">
+                                <div class="top-right-icon">
+                                    <img src="img/wordpress-icon.png" alt="" class="">
+                                </div>
+                                <button class="view-site but">forecashsports.com</button>
+                                <div class="bkgd-img" style="background-image: url('img/works/forecash-homepage.jpg');"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col work-item lifestyle wordpress"
+                        data-1300="opacity:0;"
+                        data-1400="opacity:1;"
+                    >
+                        <div class="image-holder">
+                            <a target="_blank" href="https://www.gosnowmass.com/">
+                                <div class="top-right-icon">
+                                    <img src="img/wordpress-icon.png" alt="" class="">
+                                </div>
+                                <button class="view-site but">gosnowmass.com</button>
+                                <div class="bkgd-img" style="background-image: url('img/works/gosnowmass-homepage.jpg');"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col work-item lifestyle wordpress"
+                        data-1300="opacity:0;"
+                        data-1400="opacity:1;"
+                    >
+                        <div class="image-holder">
+                            <a target="_blank" href="https://granbyranch.com/">
+                                <div class="top-right-icon">
+                                    <img src="img/wordpress-icon.png" alt="" class="">
+                                </div>
+                                <button class="view-site but">granbyranch.com</button>
+                                <div class="bkgd-img" style="background-image: url('img/works/granby-homepage.jpg');"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col work-item lifestyle wordpress"
+                        data-1300="opacity:0;"
+                        data-1400="opacity:1;"
+                    >
+                        <div class="image-holder">
+                            <a target="_blank" href="https://livebeyoga.yogajournal.com/">
+                                <div class="top-right-icon">
+                                    <img src="img/wordpress-icon.png" alt="" class="">
+                                </div>
+                                <button class="view-site but">livebeyoga.com</button>
+                                <div class="bkgd-img" style="background-image: url('img/works/yoga-homepage.jpg');"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col work-item lifestyle wordpress"
+                        data-1300="opacity:0;"
+                        data-1400="opacity:1;"
+                    >
+                        <div class="image-holder">
+                            <a target="_blank" href="https://www.mountainstrongtraining.com/">
+                                <div class="top-right-icon">
+                                    <img src="img/wordpress-icon.png" alt="" class="">
+                                </div>
+                                <button class="view-site but">mountainstrongtraining.com</button>
+                                <div class="bkgd-img" style="background-image: url('img/works/mountainstrong-homepage.jpg');"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col work-item industries wordpress"
+                        data-1300="opacity:0;"
+                        data-1400="opacity:1;"
+                    >
+                        <div class="image-holder">
+                            <a target="_blank" href="https://richeymay.com/">
+                                <div class="top-right-icon">
+                                    <img src="img/wordpress-icon.png" alt="" class="">
+                                </div>
+                                <button class="view-site but">richeymay.com</button>
+                                <div class="bkgd-img" style="background-image: url('img/works/rm-homepage.jpg');"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col work-item lifestyle beverages wordpress"
+                        data-1300="opacity:0;"
+                        data-1400="opacity:1;"
+                    >
+                        <div class="image-holder">
+                            <a target="_blank" href="https://www.squatters.com/">
+                                <div class="top-right-icon">
+                                    <img src="img/wordpress-icon.png" alt="" class="">
+                                </div>
+                                <button class="view-site but">squatters.com</button>
+                                <div class="bkgd-img" style="background-image: url('img/works/squatters-homepage.jpg');"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col work-item lifestyle wordpress"
+                        data-1300="opacity:0;"
+                        data-1400="opacity:1;"
+                    >
+                        <div class="image-holder">
+                            <a target="_blank" href="https://www.stokebroker.com/">
+                                <div class="top-right-icon">
+                                    <img src="img/wordpress-icon.png" alt="" class="">
+                                </div>
+                                <button class="view-site but">stokebroker.com</button>
+                                <div class="bkgd-img" style="background-image: url('img/works/stoke-homepage.jpg');"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col work-item lifestyle wordpress"
+                        data-1300="opacity:0;"
+                        data-1400="opacity:1;"
+                    >
+                        <div class="image-holder">
+                            <a target="_blank" href="https://strafeouterwear.com/">
+                                <div class="top-right-icon">
+                                    <img src="img/wordpress-icon.png" alt="" class="">
+                                </div>
+                                <button class="view-site but">strafeouterwear.com</button>
+                                <div class="bkgd-img" style="background-image: url('img/works/strafe-homepage.jpg');"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col work-item lifestyle beverages wordpress"
+                        data-1300="opacity:0;"
+                        data-1400="opacity:1;"
+                    >
+                        <div class="image-holder">
+                            <a target="_blank" href="https://www.threeweavers.la/">
+                                <div class="top-right-icon">
+                                    <img src="img/wordpress-icon.png" alt="" class="">
+                                </div>
+                                <button class="view-site but">threeweavers.la</button>
+                                <div class="bkgd-img" style="background-image: url('img/works/tw-homepage.jpg');"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col work-item lifestyle beverages wordpress"
+                        data-1300="opacity:0;"
+                        data-1400="opacity:1;"
+                    >
+                        <div class="image-holder">
+                            <a target="_blank" href="https://wasatchbeers.com/">
+                                <div class="top-right-icon">
+                                    <img src="img/wordpress-icon.png" alt="" class="">
+                                </div>
+                                <button class="view-site but">wasatchbeers.com</button>
+                                <div class="bkgd-img" style="background-image: url('img/works/wasatch-homepage.jpg');"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col work-item lifestyle beverages wordpress"
+                        data-1300="opacity:0;"
+                        data-1400="opacity:1;"
+                    >
+                        <div class="image-holder">
+                            <a target="_blank" href="https://www.wildbasinboozywater.com/">
+                                <div class="top-right-icon">
+                                    <img src="img/wordpress-icon.png" alt="" class="">
+                                </div>
+                                <button class="view-site but">wildbasinboozywater.com</button>
+                                <div class="bkgd-img" style="background-image: url('img/works/wb-homepage.jpg');"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col work-item industries wordpress"
+                        data-1300="opacity:0;"
+                        data-1400="opacity:1;"
+                    >
+                        <div class="image-holder">
+                            <a target="_blank" href="https://elevate.dev/">
+                                <div class="top-right-icon">
+                                    <img src="img/wordpress-icon.png" alt="" class="">
+                                </div>
+                                <button class="view-site but">elevate.dev</button>
+                                <div class="bkgd-img" style="background-image: url('img/works/elevate-homepage.jpg');"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col work-item games"
+                        data-1300="opacity:0;"
+                        data-1400="opacity:1;"
+                    >
+                        <div class="image-holder">
+                            <a target="_blank" href="https://www.buzzballz.com/">
+                                <div class="top-right-icon">
+                                    <img src="img/js-logo.png" alt="" class="js">
+                                </div>
+                                <button class="view-site but">buzzballz.com</button>
+                                <div class="bkgd-img" style="background-image: url('img/works/spin-game.jpg');"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col work-item games"
+                        data-1300="opacity:0;"
+                        data-1400="opacity:1;"
+                    >
+                        <div class="image-holder">
+                            <a target="_blank" href="https://www.buzzballz.com/">
+                                <div class="top-right-icon">
+                                    <img src="img/js-logo.png" alt="" class="js">
+                                </div>
+                                <button class="view-site but">buzzballz.com</button>
+                                <div class="bkgd-img" style="background-image: url('img/works/memory-game.jpg');"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col work-item games"
+                        data-1300="opacity:0;"
+                        data-1400="opacity:1;"
+                    >
+                        <div class="image-holder">
+                            <a target="_blank" href="https://www.buzzballz.com/">
+                                <div class="top-right-icon">
+                                    <img src="img/js-logo.png" alt="" class="js">
+                                </div>
+                                <button class="view-site but">buzzballz.com</button>
+                                <div class="bkgd-img" style="background-image: url('img/works/buzzkt-game.jpg');"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col work-item games"
+                        data-1300="opacity:0;"
+                        data-1400="opacity:1;"
+                    >
+                        <div class="image-holder">
+                            <a target="_blank" href="https://shockeyt.github.io/Whack-a-Mole/">
+                                <div class="top-right-icon">
+                                    <img src="img/js-logo.png" alt="" class="js">
+                                </div>
+                                <button class="view-site but">Whack-a-mole</button>
+                                <div class="bkgd-img" style="background-image: url('img/works/Whackamole_cropped.png');"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col work-item plugin beverages"
+                        data-1300="opacity:0;"
+                        data-1400="opacity:1;"
+                    >
+                        <div class="image-holder">
+                            <a target="_blank" href="https://www.oskarblues.com/beer-finder/">
+                                <div class="top-right-icon">
+                                    <img src="img/wordpress-plugin-icon.png" alt="" class="plugin">
+                                </div>
+                                <button class="view-site but">Beer finder plugin</button>
+                                <div class="bkgd-img" style="background-image: url('img/works/beer-finder-plugin.jpg');"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col work-item lifestyle shopify"
+                        data-1300="opacity:0;"
+                        data-1400="opacity:1;"
+                    >
+                        <div class="image-holder">
+                            <a target="_blank" href="https://mouthfuls.net/">
+                                <div class="top-right-icon">
+                                    <img src="img/shopify-logo.png" alt="" class="shopify">
+                                </div>
+                                <button class="view-site but">mouthfuls.net</button>
+                                <div class="bkgd-img" style="background-image: url('img/works/mouthfuls-homepage.jpg');"></div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </section>
 
